@@ -491,7 +491,7 @@ error_nnet = sum(prediction_nnet != observation) / nrow(testTotal)
 library(e1071)
 
 #Manage Data
-df$Cover_Type = as.factor
+df$Cover_Type = as.factor(df$Cover_Type)
 df$Soil_Type1 = as.factor(df$Soil_Type1)
 df$Soil_Type2 = as.factor(df$Soil_Type2)
 df$Soil_Type3 = as.factor(df$Soil_Type3)
